@@ -6,7 +6,7 @@ Hardware components:
 -WS2812b RGB LED strip (128x 5050 SMD addressable RGB LED devices)\
 -KY-030 microphone part\
 -10kOhm potentiometers for analog user inputs\
--5V/10A external powersupply with 1000mF capacitor to protect WS2812b on powerup\
+-5V/10A external powersupply with 1000mF capacitor to protect WS2812b on powerup
 
 Software attributes:
 
