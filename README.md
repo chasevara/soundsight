@@ -3,9 +3,7 @@
 Soundsight is an ambient sound visualizer that samples sounds in the environment and displays a real-time Fast Fourier Transform (FFT) though an RGB LED array. FFT frequency component magnitudes are mapped to a colorscale for LED output, giving the user the effect of a frequency "heat map" of their sound environment.
 
 ## User Features
-**FFT LED Display**--128 light RGB LED array that displays the frequency  
-spectrum spanning 1 Hz to 22050 Hz. Each light represents the magntiude of
-the correspinding discrete frequency component as a color value.
+**FFT LED Display**--128 light RGB LED array that displays the frequency spectrum spanning 1 Hz to 22050 Hz. Each light represents the magntiude of the correspinding discrete frequency component as a color value.
 
 **User Settings Status LEDs**--3 RGB LEDs that display the user-input potentiometer settings status. Uses the same colorscale as FFT LED Display to map status to color output.
 
@@ -50,5 +48,5 @@ FreeRTOS 11.0.1
 FastLED 3.6.0
 Arduino_CMSIS-DSP 5.7.0
 
-##License##
+## License ##
 This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/chasevara/soundsight/blob/main/LICENSE.txt) file for details.
