@@ -25,6 +25,7 @@ Arm Cortext-M4 (48MHz)
 **Hardware schematic:**
 
 
+
 ## Software Decription
 The system is architected as a FreeRTOS scheduler within the Arduino environment, organized into four Tasks:
 
@@ -40,7 +41,7 @@ The setup task is halted after its single execution, while supervisor, audio, an
 
 **"soundsight_config.h"** defines all macros used to configure the operations of the system. Includes debug-enable macros for debugging various parts of the system through serial output; Defines FreeRTOS stack and priority parameters.
 
-**"colorscales.h** defines colorscale RGB HEX value arrays. Used to drive RGB LED color settings 
+**"colorscales.h"** defines colorscale RGB HEX value arrays. Used to drive RGB LED color settings 
 
 ***IMPORTANT:*** FreeRTOS heap capacity must be set to at least 3 kB in the board's FreeRTOS port configuratioin file.
 
