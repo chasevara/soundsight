@@ -43,10 +43,10 @@ The setup task is halted after its single execution, while supervisor, audio, an
 
 ***IMPORTANT:*** FreeRTOS heap capacity must be set to at least 3 kB in the board's FreeRTOS port configuratioin file.
 
-**Open-Source Libraries Used:** 
-FreeRTOS 11.0.1 
-FastLED 3.6.0 
-Arduino_CMSIS-DSP 5.7.0 
+## Open-Source Libraries Used: ##
+FreeRTOS 11.0.1\
+FastLED 3.6.0\
+Arduino_CMSIS-DSP 5.7.0
 
 ## License ##
 This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/chasevara/soundsight/blob/main/LICENSE.txt) file for details.
