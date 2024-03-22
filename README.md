@@ -29,7 +29,7 @@ Development board and LEDs powered by external 5V/10AMP DC source. A 1000mF capa
 
 ![](https://github.com/chasevara/soundsight/blob/main/documentation/schematics/schematic_soundsight.jpg)
 
-## Software Decription ##
+## Software Description ##
 The system is architected as a FreeRTOS scheduler within the Arduino environment, organized into four tasks:
 
 **1. Setup:** Configures the board for I/O and enables MCU peripheral timers
