@@ -24,7 +24,7 @@ Arm Cortext-M4 (48MHz)
 
 **Hardware schematic:**
 
-
+![](https://github.com/chasevara/soundsight/blob/main/documentation/schematics/schematic_soundsight.jpg)
 
 ## Software Decription
 The system is architected as a FreeRTOS scheduler within the Arduino environment, organized into four Tasks:
