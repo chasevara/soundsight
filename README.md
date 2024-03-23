@@ -3,7 +3,7 @@ The goal of soundsight is to visualize audible sound in human environments in in
 \
 LEDSoundSpectrum is an ambient sound visualizer that samples sounds in the environment and displays a real-time Fast Fourier Transform (FFT) though an RGB LED array. FFT frequency component magnitudes are mapped to a colorscale for LED output, giving the user the effect of a frequency "heat map" of their sound environment.\
 \
-***v0_2 is the most current working version with all below-listed features implemented***
+***v0.2 is the most current working version with all below-listed features implemented***
 
 ## User Features
 *(click images to link to feature demo videos on youtube)*
