@@ -30,8 +30,8 @@ LEDSoundSpectrum is an ambient sound visualizer that samples sounds in the envir
 
 
 ## Hardware Description
-**Driven by an Arduino Uno Rev 4 Wifi development board**
-Arm Cortext-M4 (48MHz)
+**Driven by an Arduino Uno Rev 4 Wifi development board**\
+Arm Cortex-M4 (48MHz)\
 32kB RAM
 
 Development board and LEDs powered by external 5V/10AMP DC source. A 1000mF capacitor is installed across mains to prevent power-up surges from damaging 5050 RGB LED components. User-input potentiometers arranged as voltage dividers.
