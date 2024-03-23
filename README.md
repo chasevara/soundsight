@@ -22,7 +22,7 @@ LEDSoundSpectrum is an ambient sound visualizer that samples sounds in the envir
 
 **Visual Persistence Control**--Manipulate a potentiometer to set the weight of new FFT data in the weighted moving average of FFT data that is displayed. Affects the visual persistence or "smoothness" of data output from the FFT LED display. Full weight setting results in approiximate display of the real-time sound environment, while reduced weight settings gives the user time to more easily visualize how the sound envronment changes through time.
 
-[![Visua Persistence Control Demo](https://github.com/chasevara/soundsight/blob/main/documentation/videos/thumbnails/thumbnail_demo_persistence.jpg)](https://youtu.be/iq318SvnCOc)
+[![Visual Persistence Control Demo](https://github.com/chasevara/soundsight/blob/main/documentation/videos/thumbnails/thumbnail_demo_persistence.jpg)](https://youtu.be/iq318SvnCOc)
 
 **Colorscale Selection Button**--Press to alternate through a set of colorscale themes used to represent frequency component magnitudes on the FFT LED display.
 
@@ -53,7 +53,7 @@ The system is architected as a FreeRTOS scheduler within the Arduino environment
 
 The setup task is halted after its single execution, while supervisor, audio, and LED tasks run concurrently and with different execution periods. FreeRTOS queues are used as the predominent synchronization solution.
 
-**"soundsight_config.h"** defines all macros used to configure the operations of the system. Includes debug-enable macros for debugging various parts of the system through serial output; Defines FreeRTOS stack and priority parameters.
+**"LEDspectrum_config.h"** defines all macros used to configure the operations of the system. Includes debug-enable macros for debugging various parts of the system through serial output; Defines FreeRTOS stack and priority parameters.
 
 **"colorscales.h"** defines colorscale RGB HEX value arrays. Used to drive RGB LED color settings 
 
