@@ -14,7 +14,7 @@
 #include <Arduino_FreeRTOS.h>
 #include <arm_math.h>
 #include <FastLED.h>
-#include "config.h"
+#include "LEDspectrum_config.h"
 #include "color_scales.h"
 #include "audio_sampling.h"
 #include "WS2812b_colorscale.h"

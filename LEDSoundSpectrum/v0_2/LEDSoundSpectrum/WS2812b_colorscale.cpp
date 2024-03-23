@@ -11,7 +11,7 @@
 #include <Arduino.h>
 #include <FastLED.h>
 #include "WS2812b_colorscale.h"
-#include "config.h"
+#include "LEDspectrum_config.h"
 
 void LED_colorscale_set(float* vals_avg, 
                         float* vals_update, 

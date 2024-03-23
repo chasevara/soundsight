@@ -13,6 +13,8 @@
 #include <stdbool.h>
 #include <Arduino.h>
 #include <FastLED.h>
+#include "WS2812b_colorscale.h"
+#include "LEDspectrum_config.h"
 
 #define SET_LEDS_OFF CRGB(0, 0, 0)
 

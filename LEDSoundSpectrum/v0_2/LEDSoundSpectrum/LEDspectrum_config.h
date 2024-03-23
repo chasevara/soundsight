@@ -1,5 +1,5 @@
 /**
- * @file config.h
+ * @file LEDspectrum_config.h
  * @brief configuration settings for target Arduino board/MCU for 
  * LedSoundSpectrum project
  * @copyright Chase Vara, 2024
