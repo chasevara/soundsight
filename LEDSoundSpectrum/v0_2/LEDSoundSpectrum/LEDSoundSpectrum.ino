@@ -154,7 +154,7 @@ void Task_Setup(void *pvParameters) {
   pinMode(PIN_LED_FFT_CONT, OUTPUT);
   pinMode(PIN_LED_USER_CONT, OUTPUT);
 
-  // #ifdef __RA4M1__
+  #ifdef __RA4M1__
   R_MSTP->MSTPCRD &= ~(1 << 5); // cancel GPT module stop state
   #endif  // __RA4M1__
 
@@ -329,7 +329,7 @@ void Task_SetLEDs(void *pvParameters) {
 
   // Initialize FastLED objects
   FastLED.addLeds<WS2812, PIN_LED_FFT_CONT, GRB>(leds_fft, NUM_LEDS_FFT);
-  FastLED.addLeds<WS2812, PIN_LED_USER_CONT, GRB>(leds_user_input, NUM_LEDS_USER);
+  FastLED.addLeds<WS2812, PIN_LED_USER_CONT, RGB>(leds_user_input, NUM_LEDS_USER);
 
   // Initialize FFT data and LED settings to off-values
   for (i = 0; i < NUM_LEDS_FFT; i++) {

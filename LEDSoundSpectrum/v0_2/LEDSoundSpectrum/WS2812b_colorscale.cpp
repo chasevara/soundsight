@@ -89,7 +89,7 @@ void LED_colorscale_set(float* vals_avg,
       = (palette_index > max_palette_index) ? max_palette_index : palette_index;
       
     // update correlated LED setting 
-    leds[i - 1] = ColorFromPalette(*palette_ptr , palette_index, brightness);
+    leds[i - 1] = ColorFromPalette(*palette_ptr, palette_index, brightness);
 
     if (__DEBUG_LED__) {
       Serial.print("\n  LED Color Index #"); Serial.print(i);
