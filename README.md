@@ -12,6 +12,8 @@ LEDSoundSpectrum is an ambient sound visualizer that samples sounds in the envir
 
 **Brightness Control**--Manipulate a potentiometer to set brightness of output LEDs (Does not perfectly linearly scale colorscale hues since RGB settings are managed as discrete values. This is most noticeable at the lower range of this setting).
 
+[![Brightness Control Demo](https://github.com/chasevara/soundsight/blob/main/documentation/videos/thumbnails/thumbnail_demo_brightness.jpg)](https://github.com/chasevara/soundsight/blob/main/documentation/videos/demo_brightness.mov)
+
 **Threshold Control**--Manipulate a potentiometer to set the threshold (relative to the largest frequency component magnitude) below which a frequency component is not displayed. This allows the user to magnify dominant frequencies.
 
 **Visual Persistence Control**--Manipulate a potentiometer to set the weight of new FFT data in the weighted moving average of FFT data that is displayed. Affects the visual persistence or "smoothness" of data output from the FFT LED display. Full weight setting results in approiximate display of the real-time sound environment, while reduced weight settings gives the user time to more easily visualize how the sound envronment changes through time.
