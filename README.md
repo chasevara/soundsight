@@ -5,7 +5,9 @@ LEDSoundSpectrum is an ambient sound visualizer that samples sounds in the envir
 \
 ***v0_2 is the most current working version with all below-listed features implemented***
 
-## User Features ## *(click images to link to feature demo videos on youtube)*
+## User Features
+*(click images to link to feature demo videos on youtube)*\
+
 **FFT LED Display**--128 light RGB LED array that displays the frequency spectrum spanning 1 Hz to 22050 Hz. Each light represents the magntiude of the correspinding discrete frequency component as a color value.
 
 **User Settings Status LEDs**--3 RGB LEDs that display the user-input potentiometer settings status. Uses the same colorscale as FFT LED Display to map status to color output.
