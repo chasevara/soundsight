@@ -8,23 +8,23 @@ LEDSoundSpectrum is an ambient sound visualizer that samples sounds in the envir
 ## User Features
 *(click images to link to feature demo videos on youtube)*
 
-**FFT LED Display**--128 light RGB LED array that displays the frequency spectrum spanning 1 Hz to 22050 Hz. Each light represents the magntiude of the correspinding discrete frequency component as a color value.
+**FFT LED Display** - 128-light RGB LED array that displays the frequency spectrum spanning 1 Hz to 22050 Hz. Each light represents the magntiude of the correspinding discrete frequency component as a color value.
 
-**User Settings Status LEDs**--3 RGB LEDs that display the user-input potentiometer settings status. Uses the same colorscale as FFT LED Display to map status to color output.
+**User Settings Position LEDs** - 3 RGB LEDs that display the user-input potentiometer position a an RGB color-scale value. Uses the same colorscale as FFT LED Display.
 
-**Brightness Control**--Manipulate a potentiometer to set brightness of output LEDs (Does not perfectly linearly scale colorscale hues since RGB settings are managed as discrete values. This is most noticeable at the lower range of this setting).
+**Brightness Control** - Manipulate a potentiometer to set brightness of output LEDs (Does not perfectly linearly scale colorscale hues since RGB settings are managed as discrete values. This is most noticeable at the lower range of this setting).
 
 [![Brightness Control Demo](https://github.com/chasevara/soundsight/blob/main/documentation/videos/thumbnails/thumbnail_demo_brightness.jpg)](https://youtu.be/jOJQuSq8nRI)
 
-**Threshold Control**--Manipulate a potentiometer to set the threshold (relative to the largest frequency component magnitude) below which a frequency component is not displayed. This allows the user to magnify dominant frequencies.
+**Threshold Control** - Manipulate a potentiometer to set the threshold (relative to the largest frequency component magnitude) below which a frequency component is not displayed. This allows the user to magnify dominant frequencies.
 
 [![Magnitude Threshold Control Demo](https://github.com/chasevara/soundsight/blob/main/documentation/videos/thumbnails/thumbnail_demo_threshold.jpg)](https://youtu.be/jTJN3NtsjPg)
 
-**Visual Persistence Control**--Manipulate a potentiometer to set the weight of new FFT data in the weighted moving average of FFT data that is displayed. Affects the visual persistence or "smoothness" of data output from the FFT LED display. Full weight setting results in approiximate display of the real-time sound environment, while reduced weight settings gives the user time to more easily visualize how the sound envronment changes through time.
+**Visual Persistence Control** - Manipulate a potentiometer to set the weight of new FFT data in the weighted moving average of FFT data that is displayed. Affects the visual persistence or "smoothness" of data output from the FFT LED display. Full weight setting results in approiximate display of the real-time sound environment, while reduced weight settings gives the user time to more easily visualize how the sound envronment changes through time.
 
 [![Visual Persistence Control Demo](https://github.com/chasevara/soundsight/blob/main/documentation/videos/thumbnails/thumbnail_demo_persistence.jpg)](https://youtu.be/iq318SvnCOc)
 
-**Colorscale Selection Button**--Press to alternate through a set of colorscale themes used to represent frequency component magnitudes on the FFT LED display.
+**Colorscale Selection Button** - Press to alternate through a set of colorscale themes used to represent frequency component magnitudes on the FFT LED display.
 
 [![Colorscale Selection Demo](https://github.com/chasevara/soundsight/blob/main/documentation/videos/thumbnails/thumbnail_demo_colorscale_change.jpg)](https://youtu.be/Ujx6axzXM5M)
 
@@ -49,7 +49,7 @@ The system is architected as a FreeRTOS scheduler within the Arduino environment
 
 **3. Audio:** Samples ambient audio; computes FFT; converts complex FFT data into real magnitude data; scales magnitude data in accordance with Parseval's signal energy theorum. The DC component of the FFT is not used.
 
-**4. LED settings:** Maintains a moving weighted average of the FFT magnitude data, with weight setting from user input; Maps weighted average data to FFT LED Display, adjusting for user brightness, threshold, and colorscale set by the user. Each magnitude mapped to an LED is represented as a colorvalue for the user-selected colorscale. Also drives the user potentiometer setting status LEDs
+**4. LED settings:** Maintains a moving weighted average of the FFT magnitude data, with weight setting from user input; Maps weighted average data to FFT LED Display, adjusting for user brightness, threshold, and colorscale set by the user. Each magnitude mapped to an LED is represented as an RGB value from the user-selected colorscale. Also drives the user potentiometer position LEDs
 
 The setup task is halted after its single execution, while supervisor, audio, and LED tasks run concurrently and with different execution periods. FreeRTOS queues are used as the predominent synchronization solution.
 
