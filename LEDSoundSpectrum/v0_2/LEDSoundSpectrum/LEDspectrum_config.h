@@ -38,10 +38,10 @@
 #define F_SAMPLE 44100 
 #define MIN_TICKS_DELAY           20
 #define TICKS_FOR_SERIAL          20
-#define PERIOD_MILLIS_USER_INPUT  100
+#define PERIOD_MILLIS_USER_INPUT  50
 #define PERIOD_MILLIS_LED         25
-#define PERIOD_MILLIS_AUDIO       50
-#define SCALE_FFT_FOR_PARSEVAL    (1)
+#define PERIOD_MILLIS_AUDIO       40
+#define SCALE_FFT_FOR_PARSEVAL    (0)
 #define DEBOUNCE_MILLIS             200
 #define NUM_LEDS_FFT                128
 #define NUM_LEDS_USER               3
@@ -60,10 +60,10 @@
 #define PIN_MA_RATIO A0
 
 // Analog input pin for FFT magnitude threshold setting
-#define PIN_THRESHOLD_IN A2
+#define PIN_THRESHOLD_IN A1
 
 // Analog input pin for LED brightness setting
-#define PIN_BRIGHTNESS_IN A4
+#define PIN_BRIGHTNESS_IN A2
 
 // User color scale alternation button input
 #define PIN_COLOR_SCALE 7
